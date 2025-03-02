@@ -1,0 +1,33 @@
+class Solution {
+public:
+    vector<vector<int>> mergeArrays(vector<vector<int>>& nums1, vector<vector<int>>& nums2) {
+        vector<pair<int, int>> help;
+        
+        // Merge all elements from nums1 into help
+        for (int i = 0; i < nums1.size(); i++) {
+            help.push_back({nums1[i][0], nums1[i][1]});
+        }
+
+        // Merge all elements from nums2 into help
+        for (int i = 0; i < nums2.size(); i++) {
+            help.push_back({nums2[i][0], nums2[i][1]});
+        }
+        
+        // Sort by the first element of each pair
+        sort(help.begin(), help.end());
+        
+        // Merging the values of the same first element
+        vector<vector<int>> ans;
+        int n = help.size();
+        
+        for (int i = 0; i < n; i++) {
+            if (i == 0 || help[i].first != help[i-1].first) {
+                ans.push_back({help[i].first, help[i].second});
+            } else {
+                ans.back()[1] += help[i].second;
+            }
+        }
+
+        return ans;
+    }
+};
