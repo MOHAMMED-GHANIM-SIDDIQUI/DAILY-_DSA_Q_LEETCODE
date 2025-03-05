@@ -1,0 +1,7 @@
+class Solution {
+public:
+    long long coloredCells(int n) {
+        long long nLong = static_cast<long long>(n);
+        return nLong * nLong + (nLong - 1) * (nLong - 1);
+    }
+};
