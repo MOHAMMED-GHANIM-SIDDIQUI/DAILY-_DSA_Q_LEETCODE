@@ -1,0 +1,36 @@
+class Solution {
+    bool isprime(int num)
+    {
+        if(num==1)
+        return 0;
+        for(int i=2;i*i<=num;i++)
+        {
+            if(num%i==0)
+            return false;
+        }
+        return 1;
+    }
+public:
+    vector<int> closestPrimes(int left, int right) {
+        vector<int>prime;
+        for(int i=left;i<=right;i++)
+        {
+            if(isprime(i))
+            prime.push_back(i);
+        }
+        int smallest_diff=INT_MAX;
+        int n=prime.size();
+        vector<int>ans;
+        if(n==0 || n==1)
+        return {-1,-1};
+        for(int i=0;i<n-1;i++)
+        {
+            if(smallest_diff>(prime[i+1]-prime[i]))
+            {
+                smallest_diff=prime[i+1]-prime[i];
+                ans={prime[i],prime[i+1]};
+            }
+        }
+        return ans;
+    }
+};
