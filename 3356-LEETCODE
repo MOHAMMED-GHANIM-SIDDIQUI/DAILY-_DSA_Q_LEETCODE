@@ -1,0 +1,40 @@
+class Solution {
+public:
+    int minZeroArray(vector<int>& nums, vector<vector<int>>& queries) {
+        vector<int> line(nums.size() + 1, 0); // Initialize the vector with 0s
+        int decrement = 0;
+        int queryIndex = 0;
+
+        for (int i = 0; i < nums.size(); ++i) {
+            // Process queries while nums[i] is greater than the current decrement value
+            while (decrement + line[i] < nums[i]) {
+                // If all queries have been used up, return -1
+                if (queryIndex == queries.size()) {
+                    return -1;
+                }
+
+                // Extract the values from the current query
+                const int l = queries[queryIndex][0];
+                const int r = queries[queryIndex][1];
+                const int val = queries[queryIndex][2];
+                
+                // Increment the query index to move to the next query
+                ++queryIndex;
+
+                // Skip the query if it doesn't affect the current range
+                if (r < i) continue;
+
+                // Apply the value to the line using a range increment technique
+                line[max(l, i)] += val;
+                if (r + 1 < line.size()) {
+                    line[r + 1] -= val;
+                }
+            }
+            // Update the decrement with the current line value
+            decrement += line[i];
+        }
+
+        // Return the number of queries processed
+        return queryIndex;
+    }
+};
