@@ -1,0 +1,29 @@
+class Solution {
+public:
+    int minCapability(vector<int>& nums, int k) {
+        int left = *min_element(nums.begin(), nums.end());
+        int right = *max_element(nums.begin(), nums.end());
+
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (numStolenHouses(nums, mid) >= k)
+                right = mid;
+            else
+                left = mid + 1;
+        }
+
+        return left;
+    }
+
+private:
+    int numStolenHouses(const vector<int>& nums, int capacity) {
+        int stolenHouses = 0;
+        for (int i = 0; i < nums.size(); ++i) {
+            if (nums[i] <= capacity) {
+                stolenHouses++;
+                i++;  // Skip the next house (can't steal two consecutive houses)
+            }
+        }
+        return stolenHouses;
+    }
+};
