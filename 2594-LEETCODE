@@ -1,0 +1,38 @@
+#include <vector>
+#include <algorithm>
+#include <cmath>
+
+class Solution {
+public:
+    long long repairCars(std::vector<int>& ranks, int cars) {
+        // Binary search bounds
+        long left = 0;
+        long right = static_cast<long>(*std::min_element(ranks.begin(), ranks.end())) * cars * cars;
+
+        // Binary search to minimize the time
+        while (left < right) {
+            const long mid = (left + right) / 2;
+
+            // Check if we can fix enough cars in 'mid' minutes
+            if (numCarsFixed(ranks, mid) >= cars)
+                right = mid;  // Try to minimize the time
+            else
+                left = mid + 1;  // Increase the time
+        }
+
+        return left;  // The minimum time to repair all cars
+    }
+
+private:
+    // Function to calculate how many cars can be repaired in the given 'minutes'
+    long numCarsFixed(const std::vector<int>& ranks, long minutes) {
+        long carsFixed = 0;
+
+        // Calculate cars fixed by each worker
+        for (const int rank : ranks) {
+            carsFixed += static_cast<long>(sqrt(minutes / rank));
+        }
+
+        return carsFixed;
+    }
+};
