@@ -1,0 +1,23 @@
+class Solution {
+public:
+    int longestNiceSubarray(std::vector<int>& nums) {
+        int maxLength = 0;  // To store the maximum length of the nice subarray
+        int bitwiseUsed = 0;  // To track the bitwise OR of the current subarray elements
+
+        // Two-pointer approach: left pointer 'l' and right pointer 'r'
+        for (int l = 0, r = 0; r < nums.size(); ++r) {
+            // Move the left pointer 'l' to the right as long as the current subarray has overlapping bits
+            while (bitwiseUsed & nums[r]) {
+                bitwiseUsed ^= nums[l++];
+            }
+
+            // Include the current element at index 'r' into the subarray
+            bitwiseUsed |= nums[r];
+
+            // Update the maximum subarray length
+            maxLength = std::max(maxLength, r - l + 1);
+        }
+
+        return maxLength;  // Return the length of the longest nice subarray
+    }
+};
