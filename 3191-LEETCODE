@@ -1,0 +1,18 @@
+class Solution {
+public:
+    int minOperations(vector<int>& nums) {
+        int n = nums.size();
+        int ans = 0;
+
+        for (int i = 0; i + 2 < n; ++i) {
+            if (nums[i] == 0) {
+                nums[i + 1] ^= 1; // Toggle the second next element
+                nums[i + 2] ^= 1; // Toggle the third next element
+                ++ans;
+            }
+        }
+
+        // If the last two elements are zero, it's impossible to make the array all ones
+        return (nums[n - 1] == 0 || nums[n - 2] == 0) ? -1 : ans;
+    }
+};
