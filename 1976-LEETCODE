@@ -1,0 +1,62 @@
+class Solution {
+ public:
+  int countPaths(int n, vector<vector<int>>& roads) {
+    // Step 1: Build the graph representation
+    vector<vector<pair<int, int>>> graph(n);
+
+    for (const vector<int>& road : roads) {
+      int u = road[0];
+      int v = road[1];
+      int w = road[2];
+      graph[u].emplace_back(v, w);
+      graph[v].emplace_back(u, w);
+    }
+
+    // Step 2: Run Dijkstra to find the number of distinct shortest paths
+    return dijkstra(graph, 0, n - 1);
+  }
+
+ private:
+  // Dijkstra algorithm to find the number of distinct shortest paths from src to dst
+  int dijkstra(const vector<vector<pair<int, int>>>& graph, int src, int dst) {
+    constexpr int MOD = 1'000'000'007;
+    
+    // Number of ways to reach each node
+    vector<long> ways(graph.size(), 0);
+    
+    // Distance array initialized to a very large number (infinity)
+    vector<long> dist(graph.size(), LONG_MAX);
+
+    ways[src] = 1;  // There's 1 way to be at the source (start point)
+    dist[src] = 0;  // Distance to source is 0
+
+    // Priority queue for Dijkstra (min-heap)
+    using P = pair<long, int>;  // (distance, node)
+    priority_queue<P, vector<P>, greater<>> minHeap;
+    minHeap.emplace(0, src);
+
+    while (!minHeap.empty()) {
+      auto [d, u] = minHeap.top();
+      minHeap.pop();
+      
+      if (d > dist[u]) continue;  // Skip if this is not the shortest path to u
+
+      // Iterate over neighbors
+      for (const auto& [v, w] : graph[u]) {
+        // If a shorter path to v is found
+        if (d + w < dist[v]) {
+          dist[v] = d + w;
+          ways[v] = ways[u];  // Set the number of ways to reach v as the number of ways to reach u
+          minHeap.emplace(dist[v], v);
+        }
+        // If an equal length path to v is found, add the number of ways to reach u to v
+        else if (d + w == dist[v]) {
+          ways[v] = (ways[v] + ways[u]) % MOD;
+        }
+      }
+    }
+
+    // Return the number of ways to reach the destination (dst)
+    return ways[dst];
+  }
+};
