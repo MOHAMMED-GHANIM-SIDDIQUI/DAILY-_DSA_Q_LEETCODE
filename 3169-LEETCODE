@@ -1,0 +1,27 @@
+class Solution {
+public:
+    int countDays(int days, vector<vector<int>>& meetings) {
+        int freeDays = 0;
+        int prevEnd = 0;
+
+        // Sort meetings by start time
+        sort(meetings.begin(), meetings.end());
+
+        // Loop through each meeting
+        for (const vector<int>& meeting : meetings) {
+            const int start = meeting[0];
+            const int end = meeting[1];
+
+            // Calculate free days between prevEnd and the current meeting's start
+            if (start > prevEnd) {
+                freeDays += start - prevEnd - 1;
+            }
+
+            // Update prevEnd to the latest end time
+            prevEnd = max(prevEnd, end);
+        }
+
+        // Account for any remaining free days after the last meeting
+        return freeDays + max(0, days - prevEnd);
+    }
+};
