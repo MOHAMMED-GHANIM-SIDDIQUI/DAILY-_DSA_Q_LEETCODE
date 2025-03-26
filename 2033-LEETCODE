@@ -1,0 +1,32 @@
+class Solution {
+public:
+    int minOperations(vector<vector<int>>& grid, int x) {
+        // Step 1: Flatten the 2D grid into a 1D array
+        vector<int> arr;
+        for (const vector<int>& row : grid) {
+            for (int num : row) {
+                arr.push_back(num);
+            }
+        }
+
+        // Step 2: Check if all elements can be made equal by the given x
+        int base = arr[0];
+        for (int num : arr) {
+            if ((num - base) % x != 0) {
+                return -1;  // Return -1 if it's impossible to make all elements equal
+            }
+        }
+
+        // Step 3: Sort the array to find the median
+        sort(arr.begin(), arr.end());
+
+        // Step 4: Calculate the minimum number of operations
+        int median = arr[arr.size() / 2];
+        int operations = 0;
+        for (int num : arr) {
+            operations += abs(num - median) / x;
+        }
+
+        return operations;
+    }
+};
