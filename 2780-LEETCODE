@@ -1,0 +1,29 @@
+class Solution {
+public:
+    int minimumIndex(std::vector<int>& nums) {
+        int n = nums.size();
+        std::unordered_map<int, int> leftCount, rightCount;
+
+        // Step 1: Count frequencies of all elements in rightCount
+        for (int num : nums)
+            rightCount[num]++;
+
+        // Step 2: Iterate through the array and check the dominant condition
+        for (int i = 0; i < n; ++i) {
+            int num = nums[i];
+
+            // Move element from rightCount (right side) to leftCount (left side)
+            leftCount[num]++;
+            rightCount[num]--;
+
+            int leftFreq = leftCount[num];
+            int rightFreq = rightCount[num];
+
+            // Check if num is dominant in both left and right parts
+            if (leftFreq * 2 > (i + 1) && rightFreq * 2 > (n - i - 1))
+                return i; // Found the valid index
+        }
+
+        return -1; // No valid index found
+    }
+};
