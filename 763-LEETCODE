@@ -1,0 +1,26 @@
+class Solution {
+public:
+    vector<int> partitionLabels(string s) {
+        vector<int> ans;
+        vector<int> lastIndex(26);
+
+        // Store the last occurrence of each character
+        for (int i = 0; i < s.size(); ++i)
+            lastIndex[s[i] - 'a'] = i;
+
+        int start = 0, end = 0;
+
+        // Iterate through the string to determine partitions
+        for (int i = 0; i < s.size(); ++i) {
+            end = max(end, lastIndex[s[i] - 'a']);
+
+            // When we reach the end of a partition, store its length
+            if (i == end) {
+                ans.push_back(end - start + 1);
+                start = i + 1;
+            }
+        }
+
+        return ans;
+    }
+};
