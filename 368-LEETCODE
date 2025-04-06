@@ -1,0 +1,42 @@
+class Solution {
+public:
+    vector<int> largestDivisibleSubset(vector<int>& nums) {
+        const int n = nums.size();
+        if (n == 0) return {};  // Return an empty result if the input is empty
+        
+        vector<int> ans;
+        vector<int> sizeEndsAt(n, 1);  // Tracks the maximum subset size ending at index i
+        vector<int> prevIndex(n, -1);  // Tracks the previous index for subset construction
+        int maxSize = 1;  // Max size of the subset
+        int bestIndex = 0;  // The index of the element that ends the largest subset
+
+        // Sort the numbers to ensure we can form divisibility chains.
+        sort(nums.begin(), nums.end());
+
+        // Build the dynamic programming table.
+        for (int i = 1; i < n; ++i) {
+            for (int j = 0; j < i; ++j) {
+                if (nums[i] % nums[j] == 0 && sizeEndsAt[i] < sizeEndsAt[j] + 1) {
+                    sizeEndsAt[i] = sizeEndsAt[j] + 1;
+                    prevIndex[i] = j;
+                }
+            }
+            // Update the maxSize and the bestIndex when a larger subset is found.
+            if (sizeEndsAt[i] > maxSize) {
+                maxSize = sizeEndsAt[i];
+                bestIndex = i;
+            }
+        }
+
+        // Reconstruct the largest divisible subset by following prevIndex.
+        while (bestIndex != -1) {
+            ans.push_back(nums[bestIndex]);
+            bestIndex = prevIndex[bestIndex];
+        }
+
+        // Reverse the answer to have the correct order from smallest to largest
+        reverse(ans.begin(), ans.end());
+
+        return ans;
+    }
+};
