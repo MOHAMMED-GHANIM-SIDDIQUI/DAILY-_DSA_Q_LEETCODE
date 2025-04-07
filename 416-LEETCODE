@@ -1,0 +1,26 @@
+class Solution {
+public:
+    bool canPartition(vector<int>& nums) {
+        int totalSum = accumulate(nums.begin(), nums.end(), 0);
+        // If the sum is odd, partition is not possible
+        if (totalSum % 2 != 0) {
+            return false;
+        }
+        // Check if it's possible to form a subset with sum totalSum / 2
+        return canFormSubset(nums, totalSum / 2);
+    }
+
+private:
+    bool canFormSubset(const vector<int>& nums, int targetSum) {
+        vector<bool> dp(targetSum + 1, false);
+        dp[0] = true;  // Base case: sum 0 is always possible (empty subset)
+
+        for (int num : nums) {
+            for (int i = targetSum; i >= num; --i) {
+                dp[i] = dp[i] || dp[i - num];
+            }
+        }
+
+        return dp[targetSum];
+    }
+};
