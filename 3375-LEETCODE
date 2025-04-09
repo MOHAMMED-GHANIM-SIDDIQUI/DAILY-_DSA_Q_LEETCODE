@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int minOperations(vector<int>& nums, int k) {
+        // Step 1: Convert the vector to a set to get only unique elements
+        const unordered_set<int> numsSet{nums.begin(), nums.end()};
+        
+        // Step 2: Find the minimum value in the array
+        const int mn = ranges::min(nums);
+        
+        // Step 3: Check conditions based on the minimum value (mn) and k
+        if (mn < k)
+            return -1;  // If the minimum value is less than k, return -1
+        
+        if (mn > k)
+            return numsSet.size();  // If the minimum value is greater than k, return the number of unique elements
+        
+        return numsSet.size() - 1;  // If the minimum value is equal to k, return one less than the number of unique elements
+    }
+};
