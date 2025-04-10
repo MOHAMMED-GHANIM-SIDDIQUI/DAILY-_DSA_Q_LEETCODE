@@ -1,0 +1,66 @@
+class Solution {
+public:
+    long long numberOfPowerfulInt(long long start, long long finish, int limit, string suffix) {
+        string startStr = to_string(start);
+        string finishStr = to_string(finish);
+
+        // Pad the start number with leading zeros to match the length of finish
+        string paddedStart = string(finishStr.length() - startStr.length(), '0') + startStr;
+
+        // Pad the suffix with leading zeros if needed
+        string paddedSuffix = string(finishStr.length() - suffix.length(), '0') + suffix;
+
+        // 3D memoization table: position, tightStart, tightFinish
+        vector<vector<vector<long>>> dp(
+            finishStr.length(), vector<vector<long>>(2, vector<long>(2, -1))
+        );
+
+        return countValidNumbers(paddedStart, finishStr, 0, limit, suffix, true, true, dp);
+    }
+
+private:
+    long countValidNumbers(const string& startStr, const string& finishStr, int pos, int limit,
+                           const string& suffix, bool isTightStart, bool isTightFinish,
+                           vector<vector<vector<long>>>& dp) {
+        int totalLength = finishStr.length();
+        int suffixLength = suffix.length();
+
+        // Base case: if we're at the position where the suffix starts
+        if (pos + suffixLength == totalLength) {
+            string minSuffix = isTightStart
+                                   ? string(startStr.end() - suffixLength, startStr.end())
+                                   : string(suffixLength, '0');
+
+            string maxSuffix = isTightFinish
+                                   ? string(finishStr.end() - suffixLength, finishStr.end())
+                                   : string(suffixLength, '9');
+
+            long suffixValue = stoll(suffix);
+            return (stoll(minSuffix) <= suffixValue && suffixValue <= stoll(maxSuffix)) ? 1 : 0;
+        }
+
+        // Memoization check
+        if (dp[pos][isTightStart][isTightFinish] != -1) {
+            return dp[pos][isTightStart][isTightFinish];
+        }
+
+        long count = 0;
+        int minDigit = isTightStart ? startStr[pos] - '0' : 0;
+        int maxDigit = isTightFinish ? finishStr[pos] - '0' : 9;
+
+        // Try all possible digits at current position
+        for (int digit = minDigit; digit <= maxDigit; ++digit) {
+            if (digit > limit) continue;
+
+            bool nextTightStart = isTightStart && (digit == minDigit);
+            bool nextTightFinish = isTightFinish && (digit == maxDigit);
+
+            count += countValidNumbers(
+                startStr, finishStr, pos + 1, limit, suffix,
+                nextTightStart, nextTightFinish, dp
+            );
+        }
+
+        return dp[pos][isTightStart][isTightFinish] = count;
+    }
+};
