@@ -1,0 +1,25 @@
+class Solution {
+public:
+    int countGoodNumbers(long long n) {
+        // Calculate the result based on whether n is even or odd
+        return modPow(20, n / 2) * (n % 2 == 0 ? 1 : 5) % kMod;
+    }
+
+private:
+    static constexpr int kMod = 1'000'000'007;
+
+    // Efficient exponentiation with modulo
+    long modPow(long x, long n) {
+        long result = 1;
+        x = x % kMod; // Ensure x is within the modulus
+
+        while (n > 0) {
+            if (n % 2 == 1) {
+                result = (result * x) % kMod; // Multiply when n is odd
+            }
+            x = (x * x) % kMod; // Square the base
+            n /= 2; // Divide exponent by 2
+        }
+        return result;
+    }
+};
