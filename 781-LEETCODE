@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int numRabbits(vector<int>& answers) {
+        unordered_map<int, int> count;
+        int total = 0;
+        
+        for (int ans : answers) {
+            count[ans]++;
+        }
+
+        for (auto& [k, v] : count) {
+            // Group size is k+1
+            int groupSize = k + 1;
+            // Number of such groups needed: ceil(v / groupSize)
+            int groups = (v + groupSize - 1) / groupSize;
+            total += groups * groupSize;
+        }
+
+        return total;
+    }
+};
