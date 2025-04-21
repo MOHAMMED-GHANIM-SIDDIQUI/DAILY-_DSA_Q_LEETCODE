@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int numberOfArrays(vector<int>& differences, int lower, int upper) {
+        long minPrefix = 0, maxPrefix = 0;
+        long curr = 0;
+        
+        for (int diff : differences) {
+            curr += diff;
+            minPrefix = min(minPrefix, curr);
+            maxPrefix = max(maxPrefix, curr);
+        }
+        
+        long left = (long)lower - minPrefix;
+        long right = (long)upper - maxPrefix;
+        
+        if (left > right) return 0;
+        return (int)(right - left + 1);
+    }
+};
