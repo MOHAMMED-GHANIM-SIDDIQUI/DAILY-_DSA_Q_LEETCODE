@@ -1,0 +1,49 @@
+class Solution {
+public:
+    const int MOD = 1e9 + 7;
+    const int MAX = 10010; // Upper bound for n
+
+    // Precompute nCr (combinations) using Pascal's triangle
+    void computeCombinations(vector<vector<int>>& comb, int n) {
+        for (int i = 0; i <= n; ++i) {
+            comb[i][0] = 1;
+            for (int j = 1; j < 20; ++j) {
+                if (i >= j)
+                    comb[i][j] = (comb[i-1][j-1] + comb[i-1][j]) % MOD;
+            }
+        }
+    }
+
+    int idealArrays(int n, int maxValue) {
+        vector<vector<int>> comb(MAX, vector<int>(20, 0));
+        computeCombinations(comb, n);
+
+        // dp[len][val] = number of arrays of length 'len' ending in 'val'
+        vector<vector<int>> dp(20, vector<int>(maxValue + 1, 0));
+
+        // Base case: 1-length arrays, 1 way for each value
+        for (int i = 1; i <= maxValue; ++i)
+            dp[1][i] = 1;
+
+        // Fill DP table for lengths 2 to 19
+        for (int len = 2; len < 20; ++len) {
+            for (int i = 1; i <= maxValue; ++i) {
+                for (int j = 2*i; j <= maxValue; j += i) {
+                    dp[len][j] = (dp[len][j] + dp[len-1][i]) % MOD;
+                }
+            }
+        }
+
+        // Now sum the total ways using combinations
+        int result = 0;
+        for (int len = 1; len < 20; ++len) {
+            for (int val = 1; val <= maxValue; ++val) {
+                long long ways = dp[len][val];
+                long long choose = comb[n-1][len-1]; // choose (len-1) positions from (n-1)
+                result = (result + ways * choose % MOD) % MOD;
+            }
+        }
+
+        return result;
+    }
+};
