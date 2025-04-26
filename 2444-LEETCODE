@@ -1,0 +1,33 @@
+#include <vector>
+using namespace std;
+
+class Solution {
+public:
+    long long countSubarrays(vector<int>& nums, int minK, int maxK) {
+        long long count = 0; // total valid subarrays
+        
+        int lastMinIndex = -1; // last index where nums[i] == minK
+        int lastMaxIndex = -1; // last index where nums[i] == maxK
+        int lastBadIndex = -1; // last index where nums[i] < minK || nums[i] > maxK
+
+        for (int i = 0; i < nums.size(); ++i) {
+            if (nums[i] < minK || nums[i] > maxK) {
+                lastBadIndex = i; // bad number found
+            }
+            if (nums[i] == minK) {
+                lastMinIndex = i; // found minK
+            }
+            if (nums[i] == maxK) {
+                lastMaxIndex = i; // found maxK
+            }
+            
+            int validStart = min(lastMinIndex, lastMaxIndex); // earliest we can start a valid subarray
+            if (validStart > lastBadIndex) {
+                count += (validStart - lastBadIndex);
+            }
+            // else, no valid subarray ending at i
+        }
+
+        return count;
+    }
+};
