@@ -1,0 +1,27 @@
+class Solution {
+public:
+    long long countSubarrays(vector<int>& nums, int k) {
+        int n = nums.size();
+        int maxNum = *max_element(nums.begin(), nums.end());
+        long long ans = 0;
+        int count = 0; // count of maxNum in current window
+        int left = 0;
+
+        for (int right = 0; right < n; ++right) {
+            if (nums[right] == maxNum) {
+                count++;
+            }
+
+            while (count >= k) {
+                // when we have at least k maxNum in window
+                ans += (n - right); // all subarrays from left to beyond right are valid
+                if (nums[left] == maxNum) {
+                    count--;
+                }
+                left++;
+            }
+        }
+
+        return ans;
+    }
+};
