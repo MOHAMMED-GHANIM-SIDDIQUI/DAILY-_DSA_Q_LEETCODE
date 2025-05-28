@@ -1,0 +1,53 @@
+class Solution {
+public:
+    std::vector<int> maxTargetNodes(std::vector<std::vector<int>>& edges1,
+                                    std::vector<std::vector<int>>& edges2, int k) {
+        int n = edges1.size() + 1;
+        int m = edges2.size() + 1;
+
+        // Build adjacency lists for both trees
+        std::vector<std::vector<int>> tree1 = buildGraph(edges1, n);
+        std::vector<std::vector<int>> tree2 = buildGraph(edges2, m);
+
+        // Compute maximum reachable nodes in Tree2 within depth k - 1
+        int maxReachTree2 = 0;
+        if (k > 0) {
+            for (int i = 0; i < m; ++i) {
+                maxReachTree2 = std::max(maxReachTree2, dfs(tree2, i, -1, k - 1));
+            }
+        }
+
+        // Compute result for each node in Tree1
+        std::vector<int> result;
+        for (int i = 0; i < n; ++i) {
+            int reachTree1 = dfs(tree1, i, -1, k);
+            result.push_back(reachTree1 + maxReachTree2);
+        }
+
+        return result;
+    }
+
+private:
+    // Helper function to build adjacency list from edge list
+    std::vector<std::vector<int>> buildGraph(const std::vector<std::vector<int>>& edges, int size) {
+        std::vector<std::vector<int>> graph(size);
+        for (const auto& edge : edges) {
+            int u = edge[0], v = edge[1];
+            graph[u].push_back(v);
+            graph[v].push_back(u);
+        }
+        return graph;
+    }
+
+    // DFS to count nodes reachable within depth k
+    int dfs(const std::vector<std::vector<int>>& graph, int node, int parent, int k) {
+        if (k < 0) return 0;
+        int count = 1; // Count the current node
+        for (int neighbor : graph[node]) {
+            if (neighbor != parent) {
+                count += dfs(graph, neighbor, node, k - 1);
+            }
+        }
+        return count;
+    }
+};
