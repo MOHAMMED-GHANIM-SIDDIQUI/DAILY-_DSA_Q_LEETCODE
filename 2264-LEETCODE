@@ -1,0 +1,13 @@
+class Solution {
+public:
+    string largestGoodInteger(string s) {
+        string ans = "";
+        for (int i = 0; i + 2 < (int)s.size(); ++i) {
+            if (s[i] == s[i + 1] && s[i + 1] == s[i + 2]) {
+                string t = string(3, s[i]);     // e.g., "777"
+                if (ans.empty() || t > ans) ans = t;  // lex works for equal-length digit strings
+            }
+        }
+        return ans;
+    }
+};
