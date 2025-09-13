@@ -1,0 +1,32 @@
+class Solution {
+    bool is_vowel(char c)
+    {
+        string vowels="aeiou";
+        if (vowels.find(c) != string::npos)
+        {
+            return true;
+        }
+        return false;
+    }
+public:
+    int maxFreqSum(string s) {
+        unordered_map<char,int>mpp;
+        for(char c:s)
+        {
+            mpp[c]++;
+        }
+        int vow_max_freq=0,con_max_freq=0;
+        for(auto it:mpp)
+        {
+            if(is_vowel(it.first))
+            {
+                vow_max_freq=max(vow_max_freq,it.second);
+            }
+            else
+            {
+                con_max_freq=max(con_max_freq,it.second);
+            }
+        }
+        return vow_max_freq+con_max_freq;
+    }
+};
