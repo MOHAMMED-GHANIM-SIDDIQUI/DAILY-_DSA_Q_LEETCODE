@@ -1,0 +1,28 @@
+class Solution {
+    bool is_possible(const string &word, const string &broken) {
+        for (char c : broken) {
+            if (word.find(c) != string::npos) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+public:
+    int canBeTypedWords(string text, string brokenLetters) {
+        int n = text.size();
+        int strt = 0, ans = 0;
+
+        for (int i = 0; i <= n; i++) {
+            if (i == n || text[i] == ' ') {
+                string word = text.substr(strt, i - strt);
+                if (is_possible(word, brokenLetters)) {
+                    ans++;
+                }
+                strt = i + 1;
+            }
+        }
+
+        return ans;
+    }
+};
