@@ -1,0 +1,17 @@
+class Solution {
+    bool is_all_set(int n)
+    {
+        return (n&n+1)==0;
+    }
+    // 01111-->15
+    // 10000-->16    
+public:
+    int smallestNumber(int n) {
+        for(int i=n;i<INT_MAX;i++)
+        {
+            if(is_all_set(i))
+            return i;
+        }
+        return -1;
+    }
+};
