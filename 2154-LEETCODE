@@ -1,0 +1,29 @@
+class Solution {
+    bool is_present(vector<int> nums, int x )
+    {
+        int beg=0,end=nums.size()-1;
+        while(beg<=end)
+        {
+            int mid=beg+(end-beg)/2;
+            if (nums[mid]==x)
+                return true;
+            else if (nums[mid]>x)
+            end=mid-1;
+            else
+            beg=mid+1;
+        }
+        return false;
+    }
+public:
+    int findFinalValue(vector<int>& nums, int original) {
+        sort(nums.begin(),nums.end());
+        int ans=original;
+        while(is_present(nums,ans))
+        {
+            ans*=2;
+        }
+        return ans;
+
+        
+    }
+};
