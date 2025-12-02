@@ -1,0 +1,36 @@
+class Solution {
+public:
+    static const long long MOD = 1e9 + 7;
+    static const long long INV2 = 500000004LL; // modular inverse of 2 mod MOD
+
+    long long C2(long long k) {
+        if (k < 2) return 0;
+        // k*(k-1)/2 fits in 64-bit for typical constraints
+        return (k * (k - 1) / 2) % MOD;
+    }
+
+    int countTrapezoids(vector<vector<int>>& points) {
+        unordered_map<int, long long> cnt;
+        cnt.reserve(points.size()*2);
+
+        for (auto &p : points) {
+            cnt[p[1]]++;
+        }
+
+        long long total = 0;   // sum of a_i
+        long long sumsq = 0;   // sum of a_i^2
+
+        for (auto &entry : cnt) {
+            long long a = C2(entry.second); // number of horizontal segments on this y
+            if (a == 0) continue;
+            total = (total + a) % MOD;
+            sumsq = (sumsq + (a * a) % MOD) % MOD;
+        }
+
+        // result = ((total^2 - sumsq) / 2) % MOD
+        long long totalSq = (total * total) % MOD;
+        long long diff = (totalSq - sumsq + MOD) % MOD;
+        long long ans = (diff * INV2) % MOD;
+        return (int)ans;
+    }
+};
