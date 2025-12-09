@@ -1,0 +1,19 @@
+class Solution:
+    def specialTriplets(self, nums: List[int]) -> int:
+        MOD = 10**9 + 7
+        left = Counter()
+        right = Counter(nums)
+        result = 0
+
+        for x in nums:
+            # move x from right to current position
+            right[x] -= 1
+
+            target = x * 2
+            # count how many times target appears on left and right
+            result = (result + left[target] * right[target]) % MOD
+
+            # now x becomes part of left
+            left[x] += 1
+
+        return result
