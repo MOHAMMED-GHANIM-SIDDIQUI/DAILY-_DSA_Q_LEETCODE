@@ -22,4 +22,4 @@ class Solution:
         count[roomId] += 1
         heapq.heappush(occupied, (newStart + (end - start), roomId))
 
-    return count.index(max(count
+    return count.index(max(count))
