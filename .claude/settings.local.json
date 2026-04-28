@@ -6,7 +6,9 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "Bash(cd:*)",
       "Bash(ls *.md)",
-      "Bash(gh auth:*)"
+      "Bash(gh auth:*)",
+      "Bash(find . -maxdepth 1 -type f ! -name \"*.md\" ! -name \".*\" -delete)",
+      "Bash(git add *)"
     ]
   }
 }
