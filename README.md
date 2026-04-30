@@ -437,6 +437,7 @@ What should I remember when I see a similar question again?
 | 3202 | Find the Maximum Length of Valid Subsequence II | Medium | [View](./3202_find_the_maximum_length_of_valid_subsequence_ii.md) |
 | 3208 | Alternating Groups II | Medium | [View](./3208_alternating_groups_ii.md) |
 | 3217 | Delete Nodes From Linked List Present in Array | Medium | [View](./3217_delete_nodes_from_linked_list_present_in_array.md) |
+| 3225 | Maximum Score From Grid Operations | Hard | [View](./3225_maximum_score_from_grid_operations.md) |
 | 3227 | Vowels Game in a String | Medium | [View](./3227_vowels_game_in_a_string.md) |
 | 3228 | Maximum Number of Operations to Move Ones to the End | Medium | [View](./3228_maximum_number_of_operations_to_move_ones_to_the_end.md) |
 | 3234 | Count the Number of Substrings With Dominant Ones | Medium | [View](./3234_count_the_number_of_substrings_with_dominant_ones.md) |
@@ -531,7 +532,7 @@ What should I remember when I see a similar question again?
 | 3761 | Maximum and Minimum Sums of At Most Size K Subsequences | Medium | [View](./3761_maximum_and_minimum_sums_of_at_most_size_k_subsequences.md) |
 | 3783 | Find the Index of Permutation | Easy | [View](./3783_find_the_index_of_permutation.md) |
 
-> **382 problems** solved and growing. This table updates as new problems are added daily.
+> **383 problems** solved and growing. This table updates as new problems are added daily.
 
 ---
 
