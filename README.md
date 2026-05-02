@@ -463,13 +463,14 @@ _9 problems_
 
 ### Dynamic Programming
 
-_47 problems_
+_48 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 118 | Pascal's Triangle | Easy | [View](./dynamic-programming/0118_pascals_triangle.md) |
 | 120 | Triangle | Medium | [View](./dynamic-programming/0120_triangle.md) |
 | 368 | Largest Divisible Subset | Medium | [View](./dynamic-programming/0368_largest_divisible_subset.md) |
+| 396 | Rotate Function | Medium | [View](./dynamic-programming/0396_rotate_function.md) |
 | 416 | Partition Equal Subset Sum | Medium | [View](./dynamic-programming/0416_partition_equal_subset_sum.md) |
 | 474 | Ones and Zeroes | Medium | [View](./dynamic-programming/0474_ones_and_zeroes.md) |
 | 712 | Minimum ASCII Delete Sum for Two Strings | Medium | [View](./dynamic-programming/0712_minimum_ascii_delete_sum_for_two_strings.md) |
