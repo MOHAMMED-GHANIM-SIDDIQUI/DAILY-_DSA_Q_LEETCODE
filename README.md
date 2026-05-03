@@ -593,7 +593,7 @@ _42 problems_
 
 ### Strings
 
-_28 problems_
+_29 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -601,6 +601,7 @@ _28 problems_
 | 166 | Fraction to Recurring Decimal | Medium | [View](./strings/0166_fraction_to_recurring_decimal.md) |
 | 657 | Robot Return to Origin | Easy | [View](./strings/0657_robot_return_to_origin.md) |
 | 761 | Special Binary String | Hard | [View](./strings/0761_special_binary_string.md) |
+| 796 | Rotate String | Easy | [View](./strings/0796_rotate_string.md) |
 | 944 | Delete Columns to Make Sorted | Easy | [View](./strings/0944_delete_columns_to_make_sorted.md) |
 | 966 | Vowel Spellchecker | Medium | [View](./strings/0966_vowel_spellchecker.md) |
 | 1513 | Number of Substrings With Only 1s | Medium | [View](./strings/1513_number_of_substrings_with_only_1s.md) |
