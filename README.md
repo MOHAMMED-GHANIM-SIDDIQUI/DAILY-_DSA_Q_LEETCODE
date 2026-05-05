@@ -76,7 +76,7 @@ DAILY-_DSA_Q_LEETCODE/
 ├── sliding-window/   (27 problems)
 ├── stack-and-queue/   (12 problems)
 ├── binary-search/   (18 problems)
-├── linked-list/   (3 problems)
+├── linked-list/   (4 problems)
 ├── trees/   (14 problems)
 ├── trie/   (3 problems)
 ├── heap/   (11 problems)
@@ -89,7 +89,7 @@ DAILY-_DSA_Q_LEETCODE/
 ├── bit-manipulation/   (19 problems)
 ├── math-and-geometry/   (42 problems)
 ├── strings/   (28 problems)
-├── matrix/   (24 problems)
+├── matrix/   (25 problems)
 ├── design/   (9 problems)
 ```
 
@@ -134,7 +134,7 @@ What should I remember when I see a similar question again?
 
 Jump to a topic:
 
-[Arrays & Hashing (33)](#arrays-hashing) · [Two Pointers (17)](#two-pointers) · [Sliding Window (27)](#sliding-window) · [Stack & Queue (12)](#stack-queue) · [Binary Search (18)](#binary-search) · [Linked List (3)](#linked-list) · [Trees (14)](#trees) · [Trie (3)](#trie) · [Heap / Priority Queue (11)](#heap-priority-queue) · [Intervals (4)](#intervals) · [Greedy (45)](#greedy) · [Backtracking (6)](#backtracking) · [Graphs (12)](#graphs) · [Union Find (9)](#union-find) · [Dynamic Programming (47)](#dynamic-programming) · [Bit Manipulation (19)](#bit-manipulation) · [Math & Geometry (42)](#math-geometry) · [Strings (28)](#strings) · [Matrix / Grid (24)](#matrix-grid) · [Design (9)](#design)
+[Arrays & Hashing (33)](#arrays-hashing) · [Two Pointers (17)](#two-pointers) · [Sliding Window (27)](#sliding-window) · [Stack & Queue (12)](#stack-queue) · [Binary Search (18)](#binary-search) · [Linked List (4)](#linked-list) · [Trees (14)](#trees) · [Trie (3)](#trie) · [Heap / Priority Queue (11)](#heap-priority-queue) · [Intervals (4)](#intervals) · [Greedy (45)](#greedy) · [Backtracking (6)](#backtracking) · [Graphs (12)](#graphs) · [Union Find (9)](#union-find) · [Dynamic Programming (47)](#dynamic-programming) · [Bit Manipulation (19)](#bit-manipulation) · [Math & Geometry (42)](#math-geometry) · [Strings (28)](#strings) · [Matrix / Grid (25)](#matrix-grid) · [Design (9)](#design)
 
 ---
 
@@ -293,10 +293,11 @@ _18 problems_
 
 ### Linked List
 
-_3 problems_
+_4 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 61 | Rotate List | Medium | [View](./linked-list/0061_rotate_list.md) |
 | 1290 | Convert Binary Number in a Linked List to Integer | Easy | [View](./linked-list/1290_convert_binary_number_in_a_linked_list_to_integer.md) |
 | 3217 | Delete Nodes From Linked List Present in Array | Medium | [View](./linked-list/3217_delete_nodes_from_linked_list_present_in_array.md) |
 | 3510 | Minimum Pair Removal to Sort Array II | Hard | [View](./linked-list/3510_minimum_pair_removal_to_sort_array_ii.md) |
@@ -629,11 +630,12 @@ _29 problems_
 
 ### Matrix / Grid
 
-_24 problems_
+_25 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 36 | Valid Sudoku | Medium | [View](./matrix/0036_valid_sudoku.md) |
+| 48 | Rotate Image | Medium | [View](./matrix/0048_rotate_image.md) |
 | 73 | Set Matrix Zeroes | Medium | [View](./matrix/0073_set_matrix_zeroes.md) |
 | 417 | Pacific Atlantic Water Flow | Medium | [View](./matrix/0417_pacific_atlantic_water_flow.md) |
 | 840 | Magic Squares In Grid | Medium | [View](./matrix/0840_magic_squares_in_grid.md) |
@@ -676,7 +678,7 @@ _9 problems_
 
 ---
 
-> **383 problems** solved and growing. This index updates as new problems are added daily.
+> **385 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
