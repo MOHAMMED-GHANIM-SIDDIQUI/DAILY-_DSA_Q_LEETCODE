@@ -364,7 +364,7 @@ _4 problems_
 
 ### Greedy
 
-_45 problems_
+_46 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -413,6 +413,7 @@ _45 problems_
 | 3507 | Minimum Pair Removal to Sort Array I | Easy | [View](./greedy/3507_minimum_pair_removal_to_sort_array_i.md) |
 | 3548 | Equal Sum Grid Partition II | Hard | [View](./greedy/3548_equal_sum_grid_partition_ii.md) |
 | 3637 | Count Number of Balanced Permutations | Hard | [View](./greedy/3637_count_number_of_balanced_permutations.md) |
+| 3660 | Jump Game IX | Medium | [View](./greedy/3660_jump_game_ix.md) |
 
 ### Backtracking
 
@@ -630,7 +631,7 @@ _29 problems_
 
 ### Matrix / Grid
 
-_25 problems_
+_26 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -643,6 +644,7 @@ _25 problems_
 | 1391 | Check if There is a Valid Path in a Grid | Medium | [View](./matrix/1391_check_if_there_is_a_valid_path_in_a_grid.md) |
 | 1582 | Special Positions in a Binary Matrix | Easy | [View](./matrix/1582_special_positions_in_a_binary_matrix.md) |
 | 1625 | Lexicographically Smallest String After Applying Operations | Medium | [View](./matrix/1625_lexicographically_smallest_string_after_applying_operations.md) |
+| 1861 | Rotating the Box | Medium | [View](./matrix/1861_rotating_the_box.md) |
 | 1878 | Get Biggest Three Rhombus Sums in a Grid | Medium | [View](./matrix/1878_get_biggest_three_rhombus_sums_in_a_grid.md) |
 | 1886 | Determine Whether Matrix Can Be Obtained By Rotation | Easy | [View](./matrix/1886_determine_whether_matrix_can_be_obtained_by_rotation.md) |
 | 2033 | Minimum Operations to Make a Uni-Value Grid | Medium | [View](./matrix/2033_minimum_operations_to_make_a_uni_value_grid.md) |
@@ -678,7 +680,7 @@ _9 problems_
 
 ---
 
-> **385 problems** solved and growing. This index updates as new problems are added daily.
+> **387 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
