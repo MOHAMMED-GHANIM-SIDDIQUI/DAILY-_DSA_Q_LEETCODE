@@ -430,7 +430,7 @@ _6 problems_
 
 ### Graphs
 
-_12 problems_
+_13 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -444,6 +444,7 @@ _12 problems_
 | 2977 | Minimum Cost to Convert String II | Hard | [View](./graphs/2977_minimum_cost_to_convert_string_ii.md) |
 | 3341 | Find Minimum Time to Reach Last Room I | Medium | [View](./graphs/3341_find_minimum_time_to_reach_last_room_i.md) |
 | 3342 | Find Minimum Time to Reach Last Room II | Medium | [View](./graphs/3342_find_minimum_time_to_reach_last_room_ii.md) |
+| 3629 | Minimum Jumps to Reach End via Prime Teleportation | Medium | [View](./graphs/3629_minimum_jumps_to_reach_end_via_prime_teleportation.md) |
 | 3640 | Maximum Manhattan Distance After K Changes | Medium | [View](./graphs/3640_maximum_manhattan_distance_after_k_changes.md) |
 | 3661 | Select K Disjoint Special Substrings | Hard | [View](./graphs/3661_select_k_disjoint_special_substrings.md) |
 
@@ -680,7 +681,7 @@ _9 problems_
 
 ---
 
-> **387 problems** solved and growing. This index updates as new problems are added daily.
+> **388 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
