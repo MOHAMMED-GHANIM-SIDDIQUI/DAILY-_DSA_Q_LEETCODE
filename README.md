@@ -467,7 +467,7 @@ _9 problems_
 
 ### Dynamic Programming
 
-_48 problems_
+_49 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -502,6 +502,7 @@ _48 problems_
 | 2338 | Count the Number of Ideal Arrays | Hard | [View](./dynamic-programming/2338_count_the_number_of_ideal_arrays.md) |
 | 2435 | Paths in Matrix Whose Sum Is Divisible by K | Hard | [View](./dynamic-programming/2435_paths_in_matrix_whose_sum_is_divisible_by_k.md) |
 | 2573 | Find the String with LCP | Hard | [View](./dynamic-programming/2573_find_the_string_with_lcp.md) |
+| 2770 | Maximum Number of Jumps to Reach the Last Index | Medium | [View](./dynamic-programming/2770_maximum_number_of_jumps_to_reach_the_last_index.md) |
 | 2787 | Ways to Express an Integer as Sum of Powers | Medium | [View](./dynamic-programming/2787_ways_to_express_an_integer_as_sum_of_powers.md) |
 | 2901 | Longest Unequal Adjacent Groups Subsequence II | Medium | [View](./dynamic-programming/2901_longest_unequal_adjacent_groups_subsequence_ii.md) |
 | 2999 | Count the Number of Powerful Integers | Hard | [View](./dynamic-programming/2999_count_the_number_of_powerful_integers.md) |
@@ -682,7 +683,7 @@ _9 problems_
 
 ---
 
-> **389 problems** solved and growing. This index updates as new problems are added daily.
+> **390 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
