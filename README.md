@@ -365,7 +365,7 @@ _4 problems_
 
 ### Greedy
 
-_46 problems_
+_47 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -379,6 +379,7 @@ _46 problems_
 | 1323 | Maximum 69 Number | Easy | [View](./greedy/1323_maximum_69_number.md) |
 | 1432 | Max Difference You Can Get from Changing an Integer | Medium | [View](./greedy/1432_max_difference_you_can_get_from_changing_an_integer.md) |
 | 1536 | Minimum Swaps to Arrange a Binary Grid | Medium | [View](./greedy/1536_minimum_swaps_to_arrange_a_binary_grid.md) |
+| 1665 | Minimum Initial Energy to Finish Tasks | Hard | [View](./greedy/1665_minimum_initial_energy_to_finish_tasks.md) |
 | 1689 | Partitioning Into Minimum Number of Deci-Binary Numbers | Medium | [View](./greedy/1689_partitioning_into_minimum_number_of_deci_binary_numbers.md) |
 | 1733 | Minimum Number of People to Teach | Medium | [View](./greedy/1733_minimum_number_of_people_to_teach.md) |
 | 2016 | Maximum Difference Between Increasing Elements | Easy | [View](./greedy/2016_maximum_difference_between_increasing_elements.md) |
@@ -683,7 +684,7 @@ _9 problems_
 
 ---
 
-> **390 problems** solved and growing. This index updates as new problems are added daily.
+> **391 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
