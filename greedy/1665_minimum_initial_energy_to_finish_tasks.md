@@ -14,7 +14,7 @@ Array, Greedy, Sorting
 ## 🧩 Problem Summary
 You are given a 2D array `tasks` where `tasks[i] = [actual_i, minimum_i]`:
 - `actual_i` is the energy spent to finish task `i`.
-- `minimum_i` is the energy you must **already have** to start task `i`.
+- `minimum_i` is the energy you must already have to **start** task `i`.
 
 You may finish the tasks in any order. Return the **minimum initial energy** required to finish all tasks.
 
@@ -32,15 +32,17 @@ Two observations decide the whole problem:
 
 So we want to schedule tasks so that the **buffer** (`minimum_i - actual_i`) is consumed in the right order. The cleanest framing: do the tasks that demand the **largest buffer first**, i.e. sort by `minimum_i - actual_i` descending.
 
-But proving "this order is optimal" by hand is fiddly. A robust alternative is **binary search on the answer**: the predicate *"can I finish all tasks starting with `E` energy?"* is monotonic (more energy is always at least as good), so we binary-search the smallest `E` that works. The validator itself uses the same greedy sort. That's the approach below.
+Two ways to convert that intuition into code:
+- **Approach 1** — don't trust the sort key, *binary-search* the answer and let a greedy validator confirm feasibility. Slower but bulletproof.
+- **Approach 2** — trust the sort key, do a single greedy pass. Faster, but requires the exchange argument.
 
 ---
 
-## ⚡ Approach — Binary Search on the Answer + Greedy Validator
+## ⚡ Approach 1 — Binary Search on the Answer + Greedy Validator
 
 ### 🧠 Idea
 1. Define `is_valid(tasks, energy)`: starting with `energy`, can we finish all tasks in **some** order?
-   - Sort tasks by `minimum_i - actual_i` descending (highest "slack requirement" first).
+   - Sort tasks by `minimum_i - actual_i` descending (largest "slack requirement" first).
    - Walk through; if `energy < minimum_i` at any step, fail. Else subtract `actual_i` and continue.
 2. The predicate is monotonic in `energy`: if `E` works then `E+1` works. So binary-search `low = 0`, `high = 10^9` (safely above `sum(actual_i)`) for the smallest passing value.
 
@@ -86,6 +88,43 @@ class Solution:
 
 ---
 
+## ⚡ Approach 2 — Sorted Greedy Simulation
+
+### 🧠 Idea
+Skip the binary search. Sort once by `minimum_i - actual_i` descending and simulate:
+
+- Track `current` (energy left after the tasks already finished) and `energy` (the running answer — total starting energy committed so far).
+- For each `[actual, minimum]`:
+  - If `current < minimum`, we don't have enough to start. Top up by exactly the deficit: `energy += (minimum - current); current = minimum`.
+  - Subtract `actual` to do the task: `current -= actual`.
+
+Total of top-ups is the answer. `O(n log n)` for the sort, `O(n)` for the walk — strictly faster than Approach 1.
+
+```python
+class Solution:
+    def minimumEffort(self, tasks: List[List[int]]) -> int:
+
+        # Sort by (minimum - actual) descending
+        tasks.sort(key=lambda x: (x[1] - x[0]), reverse=True)
+
+        energy = 0
+        current = 0
+
+        for actual, minimum in tasks:
+
+            # If current energy is less than required minimum
+            if current < minimum:
+                energy += (minimum - current)
+                current = minimum
+
+            # Do the task
+            current -= actual
+
+        return energy
+```
+
+---
+
 ## 🧠 Dry Run
 
 ### Input
@@ -93,68 +132,84 @@ class Solution:
 tasks = [[1, 3], [2, 4], [10, 11], [10, 12], [8, 9]]
 ```
 
-### Sorted by (minimum - actual) descending
+### Sort key — `minimum - actual` descending
+slacks: `[1,3]→2, [2,4]→2, [10,12]→2, [8,9]→1, [10,11]→1`
+
+One stable ordering (Python keeps insertion order on ties):
 ```
-[1, 3]   → slack 2
-[2, 4]   → slack 2
-[8, 9]   → slack 1
-[10, 11] → slack 1
-[10, 12] → slack 2     ← actually slack 2 too; tie-breaking is fine either way
-```
-Sorted (one valid order):
-```
-[1, 3], [2, 4], [10, 12], [10, 11], [8, 9]
+[1, 3], [2, 4], [10, 12], [8, 9], [10, 11]
 ```
 
-### Binary search for smallest energy that finishes all tasks
+### Steps (Approach 2 — direct simulation)
+```
+start:  current = 0, energy = 0
+
+[1, 3]:  current(0) < 3  → energy += 3,  current = 3
+         do task:  current = 3 - 1 = 2
+
+[2, 4]:  current(2) < 4  → energy += 2,  current = 4
+         do task:  current = 4 - 2 = 2
+
+[10,12]: current(2) < 12 → energy += 10, current = 12
+         do task:  current = 12 - 10 = 2
+
+[8, 9]:  current(2) < 9  → energy += 7,  current = 9
+         do task:  current = 9 - 8 = 1
+
+[10,11]: current(1) < 11 → energy += 10, current = 11
+         do task:  current = 11 - 10 = 1
+```
+Return `energy = 32`.
+
+### Steps (Approach 1 — binary search collapses to the same value)
 ```
 low = 0, high = 10^9
-mid = 5*10^8 → is_valid → True → ans = 5*10^8, high = mid-1
-... (collapses quickly to the boundary)
-Eventually narrows around 32:
-  E = 32: 32≥3, →31; 31≥4, →29; 29≥12, →19; 19≥11, →9; 9≥9, →1.  ✓
-  E = 31: 31≥3, →30; 30≥4, →28; 28≥12, →18; 18≥11, →7; 7≥9?  ✗
+... binary search narrows around 32 ...
+  E = 32: 32≥3→31; 31≥4→29; 29≥12→17; 17≥9→9; 9≥11? ✗   (order varies by tie-break)
+          using the [1,3],[2,4],[10,12],[10,11],[8,9] order:
+          32≥3→31; 31≥4→29; 29≥12→19; 19≥11→9; 9≥9→1.  ✓
+  E = 31: same walk fails on the last step.
 Smallest passing E = 32.
 ```
-Return `32`. ✅
+Both approaches return `32`. ✅
 
 ---
 
 ## ⏱️ Time Complexity
 ```
-O(n log n · log V)
+Approach 1: O(n log n · log V) — validator sort × log of the energy range V ≈ 10^9
+Approach 2: O(n log n)         — one sort plus a linear pass
 ```
-Where `n = len(tasks)` and `V` is the binary-search range (`10^9`). Each validator call sorts in `O(n log n)`; there are `O(log V)` validator calls.
-
-> The pure-greedy [[1665_minimum_initial_energy_to_finish_tasks_v2]] does it in a single `O(n log n)` pass — strictly faster — but this binary-search framing is the safer template when the optimal ordering isn't obvious.
 
 ## 💾 Space Complexity
 ```
-O(n)
+Approach 1: O(n) — sorted copy inside the validator (does not mutate caller's list)
+Approach 2: O(1) extra — in-place sort; use `sorted(...)` if you need to preserve input
 ```
-For the sorted copy inside `is_valid`. We deliberately do not mutate the caller's list.
 
 ---
 
 ## ⚠️ Edge Cases
 - **Single task `[a, m]`**: answer is `m` — you need at least the minimum to start, and you finish with `m - a` left over.
-- **`actual_i == minimum_i` for all tasks**: no slack anywhere, every task drains you to exactly the prereq of the next. Answer is `sum(actual_i)`.
-- **All tasks identical**: order doesn't matter; answer is `(n-1) * a + m` for `n` copies of `[a, m]` — you need `m` to start the last one, having spent `(n-1)*a` before it.
-- **Re-sorting inside the validator**: sorting once outside is faster, but be careful — the function as written is **pure** (no mutation), which is the right default if `tasks` is reused.
-- **Upper bound `10^9`**: `sum(actual_i) ≤ 10^5 · 10^4 = 10^9`, plus `max(minimum_i) ≤ 10^4`, so `10^9` safely upper-bounds the answer. Using `10^4 * n` is also fine and tighter.
+- **`actual_i == minimum_i` for all tasks**: no slack anywhere. Answer is `sum(actual_i)`.
+- **All tasks identical `[a, m]`** (`n` copies): answer is `(n-1) * a + m`. You need `m` to start the last one, having spent `(n-1) * a` before it.
+- **Tie-breaking on `minimum - actual`**: any tie order works. Swapping two adjacent tasks with equal slack doesn't change the peak requirement (the exchange argument).
+- **Mutation**: Approach 1 deliberately uses `sorted(...)` (no mutation) because the validator is called many times. Approach 2 uses `tasks.sort(...)` in place — fine for LeetCode, but switch to `sorted(...)` if the caller reuses the list.
+- **Upper bound `10^9`** for the binary search: `sum(actual_i) ≤ 10^5 · 10^4 = 10^9`, plus `max(minimum_i) ≤ 10^4`, so `10^9` safely upper-bounds the answer. `n * max(minimum)` is tighter.
+- **Overflow** (C++/Java): cast to `long long`. In Python, irrelevant.
 
 ---
 
 ## 🎯 Interview Takeaways
-- **Binary search on the answer** is the right reflex any time the predicate "is `X` feasible?" is monotonic and easier to verify than to optimize.
-- The key sort key here is `minimum - actual` (the "buffer", how much extra you need *beyond* the cost). Sorting descending lets you spend the largest buffers first, when your energy is highest.
-- Don't mutate caller-provided lists inside a helper — it bites you when the helper is invoked repeatedly (as it is here, by the binary search).
-- This problem is a sibling of 1326 (Min Taps to Water a Garden) and 2071 (Max Tasks With Energy / Pills) — same flavor of "schedule to minimize an initial-resource requirement."
+- **Binary search on the answer** is the right reflex any time the feasibility predicate is monotonic and easier to verify than to optimize. Use Approach 1 if you can't justify the sort key under pressure.
+- **The sort key is `minimum - actual`, descending** — the "buffer" required beyond the cost. Sorting by `minimum` alone or `actual` alone both fail on small adversarial cases.
+- The pure-greedy approach (Approach 2) is justified by an **exchange argument**: swapping two adjacent tasks with the sort key flipped never decreases the required initial energy.
+- Don't mutate caller-provided lists inside a repeatedly-invoked helper. Approach 1's `sorted(...)` is intentional.
 
 ---
 
 ## 📌 Key Pattern
-👉 **"When optimal order is unclear, binary-search the answer and let a sorted-greedy validator decide feasibility — sort by `requirement − cost` descending."**
+👉 **"To minimize the peak resource ever needed, schedule items by `requirement − cost` descending. If the sort key isn't obvious, binary-search the answer and let the greedy validator decide."**
 
 ---
 
@@ -164,13 +219,14 @@ For the sorted copy inside `is_valid`. We deliberately do not mutate the caller'
 - 630. Course Schedule III
 - 871. Minimum Number of Refueling Stops
 - 1383. Maximum Performance of a Team
+- 502. IPO
 
 ---
 
 ## 🚀 Final Thoughts
-Two ways to solve this: binary search the answer with a greedy validator (this file), or skip the binary search and prove the greedy ordering directly (see [[1665_minimum_initial_energy_to_finish_tasks_v2]]). The greedy-only version is faster, but binary search is the more **discoverable** approach under interview pressure — you don't have to invent the exchange argument on the fly.
+Two clean approaches: binary-search-the-answer (discoverable but `log V` slower) and pure greedy (fast but requires you to trust the exchange argument). Code Approach 1 first under interview pressure; refactor to Approach 2 if time permits or the interviewer pushes for the optimal complexity.
 
 ---
 
 ✨ **Rule to remember:**
-> If the predicate is monotonic, binary-search the answer. The validator only has to be *correct*, not *optimal* — let the search wring out the minimum.
+> Greedy beats binary search when you can prove the sort key. The proof is an exchange argument; the key is `requirement − cost`, descending.
