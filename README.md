@@ -151,7 +151,7 @@ Jump to a topic:
 
 ### Arrays & Hashing
 
-_34 problems_
+_35 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -174,6 +174,7 @@ _34 problems_
 | 2553 | Separate the Digits in an Array | Easy | [View](./arrays-and-hashing/2553_separate_the_digits_in_an_array.md) |
 | 2615 | Sum of Distances | Medium | [View](./arrays-and-hashing/2615_sum_of_distances.md) |
 | 2780 | Minimum Index of a Valid Split | Medium | [View](./arrays-and-hashing/2780_minimum_index_of_a_valid_split.md) |
+| 2784 | Check if Array Is Good | Easy | [View](./arrays-and-hashing/2784_check_if_array_is_good.md) |
 | 2845 | Count of Interesting Subarrays | Medium | [View](./arrays-and-hashing/2845_count_of_interesting_subarrays.md) |
 | 2975 | Maximum Square Area by Removing Fences From a Field | Medium | [View](./arrays-and-hashing/2975_maximum_square_area_by_removing_fences_from_a_field.md) |
 | 3005 | Count Elements With Maximum Frequency | Easy | [View](./arrays-and-hashing/3005_count_elements_with_maximum_frequency.md) |
@@ -684,7 +685,7 @@ _9 problems_
 
 ---
 
-> **391 problems** solved and growing. This index updates as new problems are added daily.
+> **392 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
