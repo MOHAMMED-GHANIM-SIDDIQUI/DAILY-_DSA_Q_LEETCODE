@@ -270,11 +270,12 @@ _12 problems_
 
 ### Binary Search
 
-_19 problems_
+_20 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 153 | Find Minimum in Rotated Sorted Array | Medium | [View](./binary-search/0153_find_minimum_in_rotated_sorted_array.md) |
+| 154 | Find Minimum in Rotated Sorted Array II | Hard | [View](./binary-search/0154_find_minimum_in_rotated_sorted_array_ii.md) |
 | 744 | Find Smallest Letter Greater Than Target | Easy | [View](./binary-search/0744_find_smallest_letter_greater_than_target.md) |
 | 1351 | Count Negative Numbers in a Sorted Matrix | Easy | [View](./binary-search/1351_count_negative_numbers_in_a_sorted_matrix.md) |
 | 1488 | Avoid Flood in the City | Medium | [View](./binary-search/1488_avoid_flood_in_the_city.md) |
@@ -686,7 +687,7 @@ _9 problems_
 
 ---
 
-> **393 problems** solved and growing. This index updates as new problems are added daily.
+> **394 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
