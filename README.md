@@ -562,7 +562,7 @@ _19 problems_
 
 ### Math & Geometry
 
-_42 problems_
+_43 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -600,6 +600,7 @@ _42 problems_
 | 3027 | Find the Number of Ways to Place People II | Hard | [View](./math-and-geometry/3027_find_the_number_of_ways_to_place_people_ii.md) |
 | 3100 | Water Bottles II | Medium | [View](./math-and-geometry/3100_water_bottles_ii.md) |
 | 3272 | Find the Count of Good Integers | Hard | [View](./math-and-geometry/3272_find_the_count_of_good_integers.md) |
+| 3300 | Minimum Element After Replacement With Digit Sum | Easy | [View](./math-and-geometry/3300_minimum_element_after_replacement_with_digit_sum.md) |
 | 3405 | Count the Number of Arrays with K Matching Adjacent Elements | Hard | [View](./math-and-geometry/3405_count_the_number_of_arrays_with_k_matching_adjacent_elements.md) |
 | 3432 | Count Partitions with Even Sum Difference | Easy | [View](./math-and-geometry/3432_count_partitions_with_even_sum_difference.md) |
 | 3495 | Minimum Operations to Make Binary Array Elements Equal to One I | Medium | [View](./math-and-geometry/3495_minimum_operations_to_make_binary_array_elements_equal_to_one_i.md) |
@@ -698,7 +699,7 @@ _9 problems_
 
 ---
 
-> **405 problems** solved and growing. This index updates as new problems are added daily.
+> **406 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
