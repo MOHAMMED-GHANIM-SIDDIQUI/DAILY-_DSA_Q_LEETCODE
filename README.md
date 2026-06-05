@@ -332,13 +332,14 @@ _14 problems_
 
 ### Trie
 
-_3 problems_
+_4 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 386 | Lexicographical Numbers | Medium | [View](./trie/0386_lexicographical_numbers.md) |
 | 440 | K-th Smallest in Lexicographical Order | Hard | [View](./trie/0440_kth_smallest_in_lexicographical_order.md) |
 | 1233 | Remove Sub-Folders from the Filesystem | Medium | [View](./trie/1233_remove_sub_folders_from_the_filesystem.md) |
+| 3093 | Longest Common Suffix Queries | Hard | [View](./trie/3093_longest_common_suffix_queries.md) |
 
 ### Heap / Priority Queue
 
@@ -694,7 +695,7 @@ _9 problems_
 
 ---
 
-> **401 problems** solved and growing. This index updates as new problems are added daily.
+> **402 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
