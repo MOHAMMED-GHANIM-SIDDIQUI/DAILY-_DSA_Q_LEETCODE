@@ -273,7 +273,7 @@ _12 problems_
 
 ### Binary Search
 
-_20 problems_
+_21 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -291,6 +291,7 @@ _20 problems_
 | 2560 | House Robber IV | Medium | [View](./binary-search/2560_house_robber_iv.md) |
 | 2594 | Minimum Time to Repair Cars | Medium | [View](./binary-search/2594_minimum_time_to_repair_cars.md) |
 | 2616 | Minimize the Maximum Difference of Pairs | Medium | [View](./binary-search/2616_minimize_the_maximum_difference_of_pairs.md) |
+| 3161 | Block Placement Queries | Hard | [View](./binary-search/3161_block_placement_queries.md) |
 | 3296 | Minimum Number of Seconds to Make Mountain Height Zero | Medium | [View](./binary-search/3296_minimum_number_of_seconds_to_make_mountain_height_zero.md) |
 | 3350 | Adjacent Increasing Subarrays Detection II | Medium | [View](./binary-search/3350_adjacent_increasing_subarrays_detection_ii.md) |
 | 3356 | Zero Array Transformation II | Medium | [View](./binary-search/3356_zero_array_transformation_ii.md) |
@@ -697,7 +698,7 @@ _9 problems_
 
 ---
 
-> **404 problems** solved and growing. This index updates as new problems are added daily.
+> **405 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
