@@ -369,7 +369,7 @@ _4 problems_
 
 ### Greedy
 
-_47 problems_
+_48 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -388,6 +388,7 @@ _47 problems_
 | 1733 | Minimum Number of People to Teach | Medium | [View](./greedy/1733_minimum_number_of_people_to_teach.md) |
 | 2016 | Maximum Difference Between Increasing Elements | Easy | [View](./greedy/2016_maximum_difference_between_increasing_elements.md) |
 | 2078 | Two Furthest Houses With Different Colors | Easy | [View](./greedy/2078_two_furthest_houses_with_different_colors.md) |
+| 2126 | Destroying Asteroids | Medium | [View](./greedy/2126_destroying_asteroids.md) |
 | 2131 | Longest Palindrome by Concatenating Two Letter Words | Medium | [View](./greedy/2131_longest_palindrome_by_concatenating_two_letter_words.md) |
 | 2294 | Partition Array Such That Maximum Difference Is K | Medium | [View](./greedy/2294_partition_array_such_that_maximum_difference_is_k.md) |
 | 2483 | Minimum Penalty for a Shop | Medium | [View](./greedy/2483_minimum_penalty_for_a_shop.md) |
@@ -691,7 +692,7 @@ _9 problems_
 
 ---
 
-> **398 problems** solved and growing. This index updates as new problems are added daily.
+> **399 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
