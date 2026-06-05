@@ -610,7 +610,7 @@ _42 problems_
 
 ### Strings
 
-_29 problems_
+_30 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -636,6 +636,7 @@ _29 problems_
 | 2785 | Sort Vowels in a String | Medium | [View](./strings/2785_sort_vowels_in_a_string.md) |
 | 2833 | Furthest Point From Origin | Easy | [View](./strings/2833_furthest_point_from_origin.md) |
 | 2942 | Find Words Containing Character | Easy | [View](./strings/2942_find_words_containing_character.md) |
+| 3120 | Count the Number of Special Characters I | Easy | [View](./strings/3120_count_the_number_of_special_characters_i.md) |
 | 3136 | Valid Word | Easy | [View](./strings/3136_valid_word.md) |
 | 3227 | Vowels Game in a String | Medium | [View](./strings/3227_vowels_game_in_a_string.md) |
 | 3330 | Find the Original Typed String I | Easy | [View](./strings/3330_find_the_original_typed_string_i.md) |
@@ -695,7 +696,7 @@ _9 problems_
 
 ---
 
-> **402 problems** solved and growing. This index updates as new problems are added daily.
+> **403 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
