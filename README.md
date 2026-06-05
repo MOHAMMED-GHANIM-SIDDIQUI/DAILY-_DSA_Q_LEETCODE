@@ -151,7 +151,7 @@ Jump to a topic:
 
 ### Arrays & Hashing
 
-_35 problems_
+_36 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -164,6 +164,7 @@ _35 problems_
 | 1437 | Check If All 1's Are at Least Length K Places Away | Easy | [View](./arrays-and-hashing/1437_check_if_all_1s_are_at_least_length_k_places_away.md) |
 | 1534 | Count Good Triplets | Easy | [View](./arrays-and-hashing/1534_count_good_triplets.md) |
 | 1550 | Three Consecutive Odds | Easy | [View](./arrays-and-hashing/1550_three_consecutive_odds.md) |
+| 1752 | Check if Array Is Sorted and Rotated | Easy | [View](./arrays-and-hashing/1752_check_if_array_is_sorted_and_rotated.md) |
 | 1848 | Minimum Distance to the Target Element | Easy | [View](./arrays-and-hashing/1848_minimum_distance_to_the_target_element.md) |
 | 1920 | Build Array from Permutation | Easy | [View](./arrays-and-hashing/1920_build_array_from_permutation.md) |
 | 2094 | Finding 3-Digit Even Numbers | Easy | [View](./arrays-and-hashing/2094_finding_3_digit_even_numbers.md) |
@@ -689,7 +690,7 @@ _9 problems_
 
 ---
 
-> **396 problems** solved and growing. This index updates as new problems are added daily.
+> **397 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
