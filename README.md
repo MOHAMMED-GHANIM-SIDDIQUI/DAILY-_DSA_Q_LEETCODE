@@ -474,7 +474,7 @@ _9 problems_
 
 ### Dynamic Programming
 
-_49 problems_
+_50 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -498,6 +498,7 @@ _49 problems_
 | 1578 | Minimum Time to Make Rope Colorful | Medium | [View](./dynamic-programming/1578_minimum_time_to_make_rope_colorful.md) |
 | 1594 | Maximum Non Negative Product in a Matrix | Medium | [View](./dynamic-programming/1594_maximum_non_negative_product_in_a_matrix.md) |
 | 1611 | Minimum One Bit Operations to Make Integers Zero | Hard | [View](./dynamic-programming/1611_minimum_one_bit_operations_to_make_integers_zero.md) |
+| 1871 | Jump Game VII | Medium | [View](./dynamic-programming/1871_jump_game_vii.md) |
 | 1900 | The Earliest and Latest Rounds Where Players Compete | Hard | [View](./dynamic-programming/1900_the_earliest_and_latest_rounds_where_players_compete.md) |
 | 1931 | Painting a Grid With Three Different Colors | Hard | [View](./dynamic-programming/1931_painting_a_grid_with_three_different_colors.md) |
 | 2054 | Two Best Non-Overlapping Events | Medium | [View](./dynamic-programming/2054_two_best_non_overlapping_events.md) |
@@ -690,7 +691,7 @@ _9 problems_
 
 ---
 
-> **397 problems** solved and growing. This index updates as new problems are added daily.
+> **398 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
