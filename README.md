@@ -151,7 +151,7 @@ Jump to a topic:
 
 ### Arrays & Hashing
 
-_37 problems_
+_38 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -181,6 +181,7 @@ _37 problems_
 | 2975 | Maximum Square Area by Removing Fences From a Field | Medium | [View](./arrays-and-hashing/2975_maximum_square_area_by_removing_fences_from_a_field.md) |
 | 3005 | Count Elements With Maximum Frequency | Easy | [View](./arrays-and-hashing/3005_count_elements_with_maximum_frequency.md) |
 | 3010 | Divide an Array Into Subarrays With Minimum Cost I | Easy | [View](./arrays-and-hashing/3010_divide_an_array_into_subarrays_with_minimum_cost_i.md) |
+| 3043 | Find the Length of the Longest Common Prefix | Medium | [View](./arrays-and-hashing/3043_find_the_length_of_the_longest_common_prefix.md) |
 | 3289 | The Two Sneaky Numbers of Digitville | Easy | [View](./arrays-and-hashing/3289_the_two_sneaky_numbers_of_digitville.md) |
 | 3349 | Adjacent Increasing Subarrays Detection I | Easy | [View](./arrays-and-hashing/3349_adjacent_increasing_subarrays_detection_i.md) |
 | 3354 | Make Array Elements Equal to Zero | Easy | [View](./arrays-and-hashing/3354_make_array_elements_equal_to_zero.md) |
@@ -693,7 +694,7 @@ _9 problems_
 
 ---
 
-> **400 problems** solved and growing. This index updates as new problems are added daily.
+> **401 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
