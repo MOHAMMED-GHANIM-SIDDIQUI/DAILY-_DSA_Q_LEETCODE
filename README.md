@@ -564,7 +564,7 @@ _19 problems_
 
 ### Math & Geometry
 
-_43 problems_
+_44 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -611,6 +611,7 @@ _43 problems_
 | 3577 | Count the Number of Computer Unlocking Permutations | Medium | [View](./math-and-geometry/3577_count_the_number_of_computer_unlocking_permutations.md) |
 | 3623 | Count Number of Trapezoids II | Hard | [View](./math-and-geometry/3623_count_number_of_trapezoids_ii.md) |
 | 3653 | Find the Count of Good Integers | Hard | [View](./math-and-geometry/3653_find_the_count_of_good_integers.md) |
+| 3751 | Total Waviness | Medium | [View](./math-and-geometry/3751_total_waviness.md) |
 
 ### Strings
 
@@ -701,7 +702,7 @@ _9 problems_
 
 ---
 
-> **408 problems** solved and growing. This index updates as new problems are added daily.
+> **409 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
