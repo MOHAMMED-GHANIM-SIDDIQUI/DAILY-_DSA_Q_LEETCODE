@@ -151,7 +151,7 @@ Jump to a topic:
 
 ### Arrays & Hashing
 
-_38 problems_
+_39 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -190,6 +190,7 @@ _38 problems_
 | 3433 | Count Mentions Per User | Medium | [View](./arrays-and-hashing/3433_count_mentions_per_user.md) |
 | 3512 | Minimum Operations to Make Array Sum Divisible by K | Medium | [View](./arrays-and-hashing/3512_minimum_operations_to_make_array_sum_divisible_by_k.md) |
 | 3583 | Count Special Triplets | Medium | [View](./arrays-and-hashing/3583_count_special_triplets.md) |
+| 3633 | Earliest Finish Time for Land and Water Rides I | Easy | [View](./arrays-and-hashing/3633_earliest_finish_time_for_land_and_water_rides_i.md) |
 | 3651 | Transforming a Grid to Binary with Minimum Cost | Medium | [View](./arrays-and-hashing/3651_transforming_a_grid_to_binary_with_minimum_cost.md) |
 | 3719 | Count Connected Components in LCM Graph | Hard | [View](./arrays-and-hashing/3719_count_connected_components_in_lcm_graph.md) |
 | 3740 | Find the Key of the Numbers | Medium | [View](./arrays-and-hashing/3740_find_the_key_of_the_numbers.md) |
@@ -699,7 +700,7 @@ _9 problems_
 
 ---
 
-> **406 problems** solved and growing. This index updates as new problems are added daily.
+> **407 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
