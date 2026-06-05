@@ -435,12 +435,13 @@ _6 problems_
 
 ### Graphs
 
-_14 problems_
+_15 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1298 | Maximum Candies You Can Get From Boxes | Hard | [View](./graphs/1298_maximum_candies_you_can_get_from_boxes.md) |
 | 1306 | Jump Game III | Medium | [View](./graphs/1306_jump_game_iii.md) |
+| 1345 | Jump Game IV | Hard | [View](./graphs/1345_jump_game_iv.md) |
 | 1857 | Largest Color Value in a Directed Graph | Hard | [View](./graphs/1857_largest_color_value_in_a_directed_graph.md) |
 | 1976 | Number of Ways to Arrive at Destination | Medium | [View](./graphs/1976_number_of_ways_to_arrive_at_destination.md) |
 | 1976 | Number of Ways to Arrive at Destination | Medium | [View](./graphs/1976_number_of_ways_to_arrive_at_destination_v2.md) |
@@ -688,7 +689,7 @@ _9 problems_
 
 ---
 
-> **395 problems** solved and growing. This index updates as new problems are added daily.
+> **396 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
