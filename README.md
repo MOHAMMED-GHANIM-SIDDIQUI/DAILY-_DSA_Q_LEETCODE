@@ -151,7 +151,7 @@ Jump to a topic:
 
 ### Arrays & Hashing
 
-_41 problems_
+_42 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -174,6 +174,7 @@ _41 problems_
 | 2206 | Divide Array Into Equal Pairs | Easy | [View](./arrays-and-hashing/2206_divide_array_into_equal_pairs.md) |
 | 2210 | Count Hills and Valleys in an Array | Easy | [View](./arrays-and-hashing/2210_count_hills_and_valleys_in_an_array.md) |
 | 2553 | Separate the Digits in an Array | Easy | [View](./arrays-and-hashing/2553_separate_the_digits_in_an_array.md) |
+| 2574 | Left and Right Sum Differences | Easy | [View](./arrays-and-hashing/2574_left_and_right_sum_differences.md) |
 | 2615 | Sum of Distances | Medium | [View](./arrays-and-hashing/2615_sum_of_distances.md) |
 | 2657 | Find the Prefix Common Array of Two Arrays | Medium | [View](./arrays-and-hashing/2657_find_the_prefix_common_array_of_two_arrays.md) |
 | 2780 | Minimum Index of a Valid Split | Medium | [View](./arrays-and-hashing/2780_minimum_index_of_a_valid_split.md) |
@@ -710,7 +711,7 @@ _9 problems_
 
 ---
 
-> **417 problems** solved and growing. This index updates as new problems are added daily.
+> **418 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
