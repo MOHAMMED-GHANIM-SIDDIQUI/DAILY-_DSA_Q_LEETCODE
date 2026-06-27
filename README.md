@@ -492,7 +492,7 @@ _9 problems_
 
 ### Dynamic Programming
 
-_51 problems_
+_52 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -547,6 +547,7 @@ _51 problems_
 | 3539 | Find Sum of Array Product of Magical Sequences | Hard | [View](./dynamic-programming/3539_find_sum_of_array_product_of_magical_sequences.md) |
 | 3650 | Longest Subsequence with Decreasing Adjacent Difference | Hard | [View](./dynamic-programming/3650_longest_subsequence_with_decreasing_adjacent_difference.md) |
 | 3699 | Number of ZigZag Arrays I | Hard | [View](./dynamic-programming/3699_number_of_zigzag_arrays_i.md) |
+| 3700 | Number of ZigZag Arrays II | Hard | [View](./dynamic-programming/3700_number_of_zigzag_arrays_ii.md) |
 
 ### Bit Manipulation
 
@@ -719,7 +720,7 @@ _9 problems_
 
 ---
 
-> **426 problems** solved and growing. This index updates as new problems are added daily.
+> **427 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
