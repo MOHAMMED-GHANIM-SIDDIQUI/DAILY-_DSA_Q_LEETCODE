@@ -632,7 +632,7 @@ _47 problems_
 
 ### Strings
 
-_34 problems_
+_35 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -670,6 +670,7 @@ _34 problems_
 | 3614 | Process String with Special Operations II | Hard | [View](./strings/3614_process_string_with_special_operations_ii.md) |
 | 3761 | Maximum and Minimum Sums of At Most Size K Subsequences | Medium | [View](./strings/3761_maximum_and_minimum_sums_of_at_most_size_k_subsequences.md) |
 | 3783 | Find the Index of Permutation | Easy | [View](./strings/3783_find_the_index_of_permutation.md) |
+| 3838 | Weighted Word Mapping | Easy | [View](./strings/3838_weighted_word_mapping.md) |
 
 ### Matrix / Grid
 
@@ -722,7 +723,7 @@ _9 problems_
 
 ---
 
-> **429 problems** solved and growing. This index updates as new problems are added daily.
+> **430 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
