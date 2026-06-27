@@ -566,7 +566,7 @@ _19 problems_
 
 ### Math & Geometry
 
-_45 problems_
+_46 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -586,6 +586,7 @@ _45 problems_
 | 1523 | Count Odd Numbers in an Interval Range | Easy | [View](./math-and-geometry/1523_count_odd_numbers_in_an_interval_range.md) |
 | 1716 | Calculate Money in Leetcode Bank | Easy | [View](./math-and-geometry/1716_calculate_money_in_leetcode_bank.md) |
 | 1780 | Check if Number is a Sum of Powers of Three | Medium | [View](./math-and-geometry/1780_check_if_number_is_a_sum_of_powers_of_three.md) |
+| 1840 | Maximum Building Height | Hard | [View](./math-and-geometry/1840_maximum_building_height.md) |
 | 1922 | Count Good Numbers | Medium | [View](./math-and-geometry/1922_count_good_numbers.md) |
 | 1925 | Count Square Sum Triples | Easy | [View](./math-and-geometry/1925_count_square_sum_triples.md) |
 | 2048 | Next Greater Numerically Balanced Number | Medium | [View](./math-and-geometry/2048_next_greater_numerically_balanced_number.md) |
@@ -706,7 +707,7 @@ _9 problems_
 
 ---
 
-> **413 problems** solved and growing. This index updates as new problems are added daily.
+> **414 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
