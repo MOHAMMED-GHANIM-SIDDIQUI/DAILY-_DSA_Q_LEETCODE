@@ -626,7 +626,7 @@ _46 problems_
 
 ### Strings
 
-_32 problems_
+_33 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -660,6 +660,7 @@ _32 problems_
 | 3330 | Find the Original Typed String I | Easy | [View](./strings/3330_find_the_original_typed_string_i.md) |
 | 3442 | Maximum Difference Between Even and Odd Frequency I | Easy | [View](./strings/3442_maximum_difference_between_even_and_odd_frequency_i.md) |
 | 3541 | Find Most Frequent Vowel and Consonant | Easy | [View](./strings/3541_find_most_frequent_vowel_and_consonant.md) |
+| 3612 | Process String with Special Operations I | Medium | [View](./strings/3612_process_string_with_special_operations_i.md) |
 | 3761 | Maximum and Minimum Sums of At Most Size K Subsequences | Medium | [View](./strings/3761_maximum_and_minimum_sums_of_at_most_size_k_subsequences.md) |
 | 3783 | Find the Index of Permutation | Easy | [View](./strings/3783_find_the_index_of_permutation.md) |
 
@@ -714,7 +715,7 @@ _9 problems_
 
 ---
 
-> **421 problems** solved and growing. This index updates as new problems are added daily.
+> **422 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
