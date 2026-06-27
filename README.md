@@ -376,7 +376,7 @@ _4 problems_
 
 ### Greedy
 
-_48 problems_
+_49 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -393,6 +393,7 @@ _48 problems_
 | 1665 | Minimum Initial Energy to Finish Tasks | Hard | [View](./greedy/1665_minimum_initial_energy_to_finish_tasks.md) |
 | 1689 | Partitioning Into Minimum Number of Deci-Binary Numbers | Medium | [View](./greedy/1689_partitioning_into_minimum_number_of_deci_binary_numbers.md) |
 | 1733 | Minimum Number of People to Teach | Medium | [View](./greedy/1733_minimum_number_of_people_to_teach.md) |
+| 1833 | Maximum Ice Cream Bars | Medium | [View](./greedy/1833_maximum_ice_cream_bars.md) |
 | 2016 | Maximum Difference Between Increasing Elements | Easy | [View](./greedy/2016_maximum_difference_between_increasing_elements.md) |
 | 2078 | Two Furthest Houses With Different Colors | Easy | [View](./greedy/2078_two_furthest_houses_with_different_colors.md) |
 | 2126 | Destroying Asteroids | Medium | [View](./greedy/2126_destroying_asteroids.md) |
@@ -705,7 +706,7 @@ _9 problems_
 
 ---
 
-> **412 problems** solved and growing. This index updates as new problems are added daily.
+> **413 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
