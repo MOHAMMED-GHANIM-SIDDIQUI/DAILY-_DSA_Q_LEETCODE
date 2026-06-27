@@ -578,7 +578,7 @@ _19 problems_
 
 ### Math & Geometry
 
-_46 problems_
+_47 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -628,6 +628,7 @@ _46 problems_
 | 3623 | Count Number of Trapezoids II | Hard | [View](./math-and-geometry/3623_count_number_of_trapezoids_ii.md) |
 | 3653 | Find the Count of Good Integers | Hard | [View](./math-and-geometry/3653_find_the_count_of_good_integers.md) |
 | 3751 | Total Waviness | Medium | [View](./math-and-geometry/3751_total_waviness.md) |
+| 3753 | Total Waviness of Numbers in Range II | Hard | [View](./math-and-geometry/3753_total_waviness_of_numbers_in_range_ii.md) |
 
 ### Strings
 
@@ -721,7 +722,7 @@ _9 problems_
 
 ---
 
-> **428 problems** solved and growing. This index updates as new problems are added daily.
+> **429 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
