@@ -151,7 +151,7 @@ Jump to a topic:
 
 ### Arrays & Hashing
 
-_43 problems_
+_44 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -196,6 +196,7 @@ _43 problems_
 | 3633 | Earliest Finish Time for Land and Water Rides I | Easy | [View](./arrays-and-hashing/3633_earliest_finish_time_for_land_and_water_rides_i.md) |
 | 3635 | Earliest Finish Time for Land and Water Rides II | Medium | [View](./arrays-and-hashing/3635_earliest_finish_time_for_land_and_water_rides_ii.md) |
 | 3651 | Transforming a Grid to Binary with Minimum Cost | Medium | [View](./arrays-and-hashing/3651_transforming_a_grid_to_binary_with_minimum_cost.md) |
+| 3689 | Maximum Total Subarray Value I | Medium | [View](./arrays-and-hashing/3689_maximum_total_subarray_value_i.md) |
 | 3719 | Count Connected Components in LCM Graph | Hard | [View](./arrays-and-hashing/3719_count_connected_components_in_lcm_graph.md) |
 | 3740 | Find the Key of the Numbers | Medium | [View](./arrays-and-hashing/3740_find_the_key_of_the_numbers.md) |
 
@@ -716,7 +717,7 @@ _9 problems_
 
 ---
 
-> **423 problems** solved and growing. This index updates as new problems are added daily.
+> **424 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
