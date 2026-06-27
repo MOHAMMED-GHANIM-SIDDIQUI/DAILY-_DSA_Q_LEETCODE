@@ -355,7 +355,7 @@ _4 problems_
 
 ### Heap / Priority Queue
 
-_11 problems_
+_12 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -370,6 +370,7 @@ _11 problems_
 | 3318 | Find X-Sum of All K-Long Subarrays I | Easy | [View](./heap/3318_find_x_sum_of_all_k_long_subarrays_i.md) |
 | 3321 | Find X-Sum of All K-Long Subarrays II | Hard | [View](./heap/3321_find_x_sum_of_all_k_long_subarrays_ii.md) |
 | 3362 | Zero Array Transformation III | Medium | [View](./heap/3362_zero_array_transformation_iii.md) |
+| 3691 | Maximum Total Subarray Value II | Hard | [View](./heap/3691_maximum_total_subarray_value_ii.md) |
 
 ### Intervals
 
@@ -717,7 +718,7 @@ _9 problems_
 
 ---
 
-> **424 problems** solved and growing. This index updates as new problems are added daily.
+> **425 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
