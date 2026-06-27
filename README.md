@@ -304,13 +304,14 @@ _21 problems_
 
 ### Linked List
 
-_5 problems_
+_6 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 61 | Rotate List | Medium | [View](./linked-list/0061_rotate_list.md) |
 | 1290 | Convert Binary Number in a Linked List to Integer | Easy | [View](./linked-list/1290_convert_binary_number_in_a_linked_list_to_integer.md) |
 | 2095 | Delete the Middle Node of a Linked List | Medium | [View](./linked-list/2095_delete_the_middle_node_of_a_linked_list.md) |
+| 2130 | Maximum Twin Sum of a Linked List | Medium | [View](./linked-list/2130_maximum_twin_sum_of_a_linked_list.md) |
 | 3217 | Delete Nodes From Linked List Present in Array | Medium | [View](./linked-list/3217_delete_nodes_from_linked_list_present_in_array.md) |
 | 3510 | Minimum Pair Removal to Sort Array II | Hard | [View](./linked-list/3510_minimum_pair_removal_to_sort_array_ii.md) |
 
@@ -708,7 +709,7 @@ _9 problems_
 
 ---
 
-> **415 problems** solved and growing. This index updates as new problems are added daily.
+> **416 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
