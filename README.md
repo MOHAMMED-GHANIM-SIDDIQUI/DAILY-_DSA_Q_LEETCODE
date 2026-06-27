@@ -615,7 +615,7 @@ _44 problems_
 
 ### Strings
 
-_31 problems_
+_32 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -626,6 +626,7 @@ _31 problems_
 | 796 | Rotate String | Easy | [View](./strings/0796_rotate_string.md) |
 | 944 | Delete Columns to Make Sorted | Easy | [View](./strings/0944_delete_columns_to_make_sorted.md) |
 | 966 | Vowel Spellchecker | Medium | [View](./strings/0966_vowel_spellchecker.md) |
+| 1189 | Maximum Number of Balloons | Easy | [View](./strings/1189_maximum_number_of_balloons.md) |
 | 1513 | Number of Substrings With Only 1s | Medium | [View](./strings/1513_number_of_substrings_with_only_1s.md) |
 | 1545 | Find Kth Bit in Nth Binary String | Medium | [View](./strings/1545_find_kth_bit_in_nth_binary_string.md) |
 | 1758 | Minimum Changes to Make Alternating Binary String | Easy | [View](./strings/1758_minimum_changes_to_make_alternating_binary_string.md) |
@@ -702,7 +703,7 @@ _9 problems_
 
 ---
 
-> **409 problems** solved and growing. This index updates as new problems are added daily.
+> **410 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
