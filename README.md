@@ -317,7 +317,7 @@ _6 problems_
 
 ### Trees
 
-_14 problems_
+_15 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -326,6 +326,7 @@ _14 problems_
 | 1161 | Maximum Level Sum of a Binary Tree | Medium | [View](./trees/1161_maximum_level_sum_of_a_binary_tree.md) |
 | 1382 | Balance a Binary Search Tree | Medium | [View](./trees/1382_balance_a_binary_search_tree.md) |
 | 2179 | Count Good Triplets in an Array | Hard | [View](./trees/2179_count_good_triplets_in_an_array.md) |
+| 2196 | Create Binary Tree From Descriptions | Medium | [View](./trees/2196_create_binary_tree_from_descriptions.md) |
 | 2322 | Minimum Score After Removals on a Tree | Hard | [View](./trees/2322_minimum_score_after_removals_on_a_tree.md) |
 | 2872 | Maximum Number of K-Divisible Components | Hard | [View](./trees/2872_maximum_number_of_k_divisible_components.md) |
 | 3068 | Find the Maximum Sum of Node Values | Hard | [View](./trees/3068_find_the_maximum_sum_of_node_values.md) |
@@ -709,7 +710,7 @@ _9 problems_
 
 ---
 
-> **416 problems** solved and growing. This index updates as new problems are added daily.
+> **417 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
