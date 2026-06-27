@@ -151,7 +151,7 @@ Jump to a topic:
 
 ### Arrays & Hashing
 
-_44 problems_
+_45 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -198,6 +198,7 @@ _44 problems_
 | 3651 | Transforming a Grid to Binary with Minimum Cost | Medium | [View](./arrays-and-hashing/3651_transforming_a_grid_to_binary_with_minimum_cost.md) |
 | 3689 | Maximum Total Subarray Value I | Medium | [View](./arrays-and-hashing/3689_maximum_total_subarray_value_i.md) |
 | 3719 | Count Connected Components in LCM Graph | Hard | [View](./arrays-and-hashing/3719_count_connected_components_in_lcm_graph.md) |
+| 3737 | Count Subarrays With Majority Element I | Medium | [View](./arrays-and-hashing/3737_count_subarrays_with_majority_element_i.md) |
 | 3740 | Find the Key of the Numbers | Medium | [View](./arrays-and-hashing/3740_find_the_key_of_the_numbers.md) |
 
 ### Two Pointers
@@ -720,7 +721,7 @@ _9 problems_
 
 ---
 
-> **427 problems** solved and growing. This index updates as new problems are added daily.
+> **428 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
