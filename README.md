@@ -564,7 +564,7 @@ _19 problems_
 
 ### Math & Geometry
 
-_44 problems_
+_45 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -577,6 +577,7 @@ _44 problems_
 | 1295 | Find Numbers with Even Number of Digits | Easy | [View](./math-and-geometry/1295_find_numbers_with_even_number_of_digits.md) |
 | 1304 | Find N Unique Integers Sum up to Zero | Easy | [View](./math-and-geometry/1304_find_n_unique_integers_sum_up_to_zero.md) |
 | 1317 | Convert Integer to the Sum of Two No-Zero Integers | Easy | [View](./math-and-geometry/1317_convert_integer_to_the_sum_of_two_no_zero_integers.md) |
+| 1344 | Angle Between Hands of a Clock | Medium | [View](./math-and-geometry/1344_angle_between_hands_of_a_clock.md) |
 | 1390 | Four Divisors | Medium | [View](./math-and-geometry/1390_four_divisors.md) |
 | 1399 | Count Largest Group | Easy | [View](./math-and-geometry/1399_count_largest_group.md) |
 | 1518 | Water Bottles | Easy | [View](./math-and-geometry/1518_water_bottles.md) |
@@ -703,7 +704,7 @@ _9 problems_
 
 ---
 
-> **410 problems** solved and growing. This index updates as new problems are added daily.
+> **411 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
