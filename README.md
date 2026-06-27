@@ -319,7 +319,7 @@ _6 problems_
 
 ### Trees
 
-_15 problems_
+_16 problems_
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
@@ -336,6 +336,7 @@ _15 problems_
 | 3373 | Maximize the Number of Target Nodes After Connecting Trees II | Hard | [View](./trees/3373_maximize_the_number_of_target_nodes_after_connecting_trees_ii.md) |
 | 3477 | Fruits Into Baskets II | Medium | [View](./trees/3477_fruits_into_baskets_ii.md) |
 | 3479 | Fruits Into Baskets III | Medium | [View](./trees/3479_fruits_into_baskets_iii.md) |
+| 3558 | Number of Ways to Assign Edge Weights I | Medium | [View](./trees/3558_number_of_ways_to_assign_edge_weights_i.md) |
 | 3562 | Maximum Profit from Trading Stocks with Discounts | Hard | [View](./trees/3562_maximum_profit_from_trading_stocks_with_discounts.md) |
 | 3721 | Count Non-Decreasing Subarrays After K Operations | Hard | [View](./trees/3721_count_non_decreasing_subarrays_after_k_operations.md) |
 
@@ -712,7 +713,7 @@ _9 problems_
 
 ---
 
-> **419 problems** solved and growing. This index updates as new problems are added daily.
+> **420 problems** solved and growing. This index updates as new problems are added daily.
 
 ---
 
